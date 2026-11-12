@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya Fashions</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--my style-->
+<link rel="stylesheet" href="style.css">
+<!--my Js-->
+
+<script src="product.js"></script>
+<script src="main.js"></script>
+<!--font icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+<!--Navbar-->
+<nav class="navbar">
+    
+<h1><i class="fa-brands fa-deskpro"></i> Diya Fashions</h1>
+<div class="navbar-links">
+
+<p class="navbar-link"><a href="cartt.html"><i class="fa-solid fa-cart-arrow-down"></i></a></p>
+<p class="navbar-link"><a href=""><i class="fa-regular fa-circle-user"></i></a></p></div></nav>
+
+<div class="searchbar"><p><input type="text" placeholder="Search"></p></div>
+
+
+<div class="products" id="productList">
+    <div class="box"><p style="text-align: center"><img src="Images/Pro1.jpg" width="200" height="200"></p>
+        <h2 style="text-align: center;">Frock</h2>
+<p class="des">Dressing up gets a whole lot easier when you know you're slipping into a cute dress.</p>
+<p class="price"><strike>Rs. 2000</strike> Rs.399</p>
+<p class="button"><button onclick="addToCart('Frock', 399)">Add Cart</button></p>
+</div>
+
+    <div class="box"><p style="text-align: center"><img src="Images/pro2.jfif" width="200" height="200"></p>
+        <h2 style="text-align: center;">TShirt</h2>
+    <p class="des">Dressing up gets a whole lot easier when you know you're slipping into a cute dress.</p>
+    <p class="price"><strike>Rs. 899</strike> Rs.399</p>
+    <p class="button"><button onclick="addToCart('TShirt', 399)">Add Cart</button></p>
+    </div>
+    <div class="box">
+        <p style="text-align: center"><img src="Images/pro3.jfif" width="200" height="200"></p>
+        <h2 style="text-align: center;">Watch</h2>
+        <p class="des">Dressing up gets a whole lot easier when you know you're slipping into a cute watch.</p>
+        <p class="price"><strike>Rs. 1899</strike> Rs.799</p>
+        <p class="button"><button onclick="addToCart('Watch', 799)">Add Cart</button></p>
+        </div>
+        <div class="box">
+            <p style="text-align: center"><img src="Images/pro4.jfif" width="200" height="200"></p>
+            <h2 style="text-align: center;">Western</h2>
+            <p class="des">Dressing up gets a whole lot easier when you know you're slipping into a cute watch.</p>
+            <p class="price"><strike>Rs. 699</strike> Rs.299</p>
+            <p class="button"><button onclick="addToCart('Western', 299)">Add Cart</button></p>
+            </div>
+            <div class="box">
+                <p style="text-align: center"><img src="Images/pro5.jfif" width="200" height="200"></p>
+                <h2 style="text-align: center;">Kurta</h2>
+                <p class="des">Dressing up gets a whole lot easier when you know you're slipping into a cute watch.</p>
+                <p class="price"><strike>Rs. 1999</strike> Rs.699</p>
+                <p class="button"><button onclick="addToCart('Kurta', 699)">Add Cart</button></p>
+                </div>
+                <div class="box">
+                    <p style="text-align: center"><img src="Images/pro6.jfif" width="200" height="200"></p>
+                    <h2 style="text-align: center;">Pant</h2>
+                    <p class="des">Dressing up gets a whole lot easier when you know you're slipping into a cute watch.</p>
+                    <p class="price"><strike>Rs. 689</strike> Rs.457</p>
+                    <p class="button"><button onclick="addToCart('Pant', 457)">Add Cart</button></p>
+                    
+
+                    </div>
+</div>
+</body>
+</html>

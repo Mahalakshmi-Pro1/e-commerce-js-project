@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <style>
+        body{
+            font-family: Arial;
+            padding:20px;
+        }
+
+        .cart-item{
+            border:1px solid black;
+            padding:10px;
+            margin:10px;
+            width:250px;
+        }
+
+        img{
+            width:150px;
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Cart</h1>
+
+<div id="cart-container"></div>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let container = document.getElementById("cart-container");
+
+cart.forEach(function(item){
+
+    container.innerHTML += `
+    
+    <div class="cart-item">
+        <img src="${item.image}">
+        <h3>${item.name}</h3>
+        <p>Rs.${item.price}</p>
+    </div>
+    
+    `;
+});
+
+</script>
+
+</body>
+</html>
